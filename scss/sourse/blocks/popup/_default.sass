@@ -1,0 +1,49 @@
+
+.popup
+  @include positionElement(100%, 100%, 0, 0, left, top, 4, fixed, flex)
+  .popup-overlay
+    @include positionElement(100%, 100%, 0, 0)
+    background-color: $blackColor
+    opacity: 0.6
+  a
+    &:hover
+      color: $blackColor
+.close-btn_popup
+  position: absolute
+  right: 0
+  top: 0
+  margin: 30px
+  z-index: 2
+.popup-centring
+  margin: auto
+  width: 100%
+.popup-container
+  position: relative
+  background-color: $whiteColor
+  max-width: 600px
+  width: 100%
+  margin: auto
+  padding: 45px 30px 60px
+  border-radius: 20px
+  h2, h3
+    margin: 0 0 15px
+    text-align: center
+
+  h2
+    color: $violetColor
+  .lead
+    text-align: center
+    margin: 0 0 15px
+  .form-btn-container
+    text-align: center
+  .wpcf7
+    max-width: 440px
+    margin: 0 auto
+.element-show
+  transition: ease-out 0.25s
+  opacity: 0
+  visibility: hidden
+
+  &.show
+    opacity: 1
+    visibility: visible

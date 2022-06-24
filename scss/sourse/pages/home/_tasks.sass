@@ -1,0 +1,29 @@
+.tasks
+  position: relative
+  overflow: hidden
+.tasks-item
+  max-width: 250px
+  margin: 0 auto
+
+  h3
+    color: $violetColor
+    min-height: 50px
+    font-size: $standartSizePlus
+    margin: 0 0 $remSize
+.tasks-item-img
+  text-align: center
+  margin: 0 0 30px
+  font-size: 0
+  width: 108px
+  img
+    width: 100%
+    height: auto
+.tasks-item-description
+  font-size: $smallSizeSecond
+
+@media (max-width: 768px)
+  .tasks-item h3
+    height: auto
+@media (max-width: 576px)
+  .tasks-item
+    max-width: none

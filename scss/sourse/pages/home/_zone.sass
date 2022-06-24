@@ -1,0 +1,53 @@
+.zone
+	padding-bottom: 75px
+	position: relative
+	overflow: hidden
+	.head-section
+		margin-bottom: 0
+.zone-map
+	height: 560px
+	@include bgImageEl("../images/zone.jpg", contain)
+	display: flex
+	text-align: center
+	color: $violetColor
+	margin: 0 0 $remSize
+	span
+		display: inline-block
+		margin: auto
+		font-size: $largeSize
+		font-weight: 400
+		padding-top: 90px
+.zone-item
+	font-size: $standartSizePlus
+	font-weight: 500
+	max-width: 300px
+	margin: 0 auto
+	h3
+		font-size: inherit
+		font-weight: 500
+		line-height: 1.8
+		color: $violetColor
+		span
+			color: $orangeColor
+@media (max-width: 768px)
+	.zone-map
+		height: 350px
+@media (max-width: 576px)
+	.zone-map
+		background-image: url("../images/zone-mobile.jpg")
+	.zone
+		padding-bottom: 40px
+
+	.zone-item
+		max-width: none
+		font-size: 12px
+		text-align: center
+		max-width: 250px
+		margin: 0 auto 15px
+		span
+			display: block
+	.zone-map
+		height: 160px
+		span
+			padding-top: 30px
+			font-size: $smallSize

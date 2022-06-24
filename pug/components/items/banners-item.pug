@@ -1,0 +1,23 @@
+mixin bannerItem(img, subtitle, title, text, btn)
+  if btn
+    .banners-item.banners-item--last.col-6.col-xs-12
+      .banners-info
+        h3
+          = title
+        .banner-item-text
+          = text
+      .btn-container
+        a(href="#" class="btn btn--orange btn--anim") 
+          span Подключить
+          i
+  else 
+    .banners-item.col-6.col-xs-12
+      .banners-info
+        h2
+          = subtitle
+        h3
+          = title
+        .banner-item-text
+          = text
+      .banners-img-container
+        img(src= img, alt="").banners-item-img

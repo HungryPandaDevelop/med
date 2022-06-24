@@ -1,0 +1,15 @@
+mixin newsItem( name, text, img, data)
+	.news-item.main-grid.col-3.col-xs-12
+		.col-1.hidden-md
+		.col-5.col-md-6
+			.news-item-img.img-cover
+				img(src= img, alt="")
+		.col-5.col-md-6
+			.news-item-info
+				h3
+					a(href="#")= name
+				.news-item-date= data
+				.news-item-text
+					= text
+				.btn-container 
+					a(href="#")  Читать подробнее 

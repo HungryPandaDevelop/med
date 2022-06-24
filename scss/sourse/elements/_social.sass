@@ -1,0 +1,43 @@
+.social
+  display: inline-block
+  vertical-align: middle
+  a
+    display: inline-block
+    margin: 0 15px 0 0
+    position: relative
+    font-size: 0
+    border-radius: 100%
+    img
+      object-fit: cover
+      width: 30px
+      height: 30px
+    &:hover
+      .ico-hover
+        opacity: 1
+        visibility: visible
+  .ico-hover
+    @include positionElement(100%,100%,0,0)
+    opacity: 0
+    visibility: hidden
+
+.social
+  display: inline-block
+  vertical-align: middle
+  .addtoany_list
+    a
+      display: inline-block
+      margin: 0 15px 0 0
+      padding: 8px
+      border: 1px solid $blackColor
+      border-radius: 100%
+      font-size: 0
+      line-height: 1
+      &:hover
+        border: 1px solid $greenColor
+      img
+        object-fit: cover
+        width: 20px
+        height: 20px
+
+    .social-ico--white
+      border-color: $whiteColor

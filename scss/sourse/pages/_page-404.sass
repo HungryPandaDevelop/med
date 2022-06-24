@@ -1,0 +1,16 @@
+.page-404
+  h2
+    color: $violetColor
+    font-size: $mediumSizePlusPlus
+    margin: 0 0 30px
+.img-404-container
+  text-align: center
+  width: 340px
+  height: 380px
+  @include bgImageEl("../images/page-404.jpg", contain)
+
+@media (max-width: 768px)
+  .img-404-container
+    margin: 0 auto 30px
+  .page-404
+    text-align: center

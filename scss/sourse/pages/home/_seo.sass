@@ -1,0 +1,38 @@
+.seo
+	font-size: $smallSizeSecond
+	h2
+		color: $violetColor
+		font-size: $mediumSize
+.hideshow-item
+	border-top: 1px solid $grayColorSecond
+	border-bottom: 1px solid $grayColorSecond
+	margin-top: -1px
+	// padding-bottom: $remSize
+.hideshow-head
+	padding: $remSize 0 0
+	display: flex
+	h3
+		font-size: $standartSizePlus
+		color: $violetColor
+	i
+		cursor: pointer
+		margin-left: auto
+		@include icoEl(18px, 18px, "../images/plus-violet.svg",)
+.hideshow-content
+	position: relative
+	overflow: hidden
+	padding-top: $remSize
+	max-height: 0
+	transition: linear 0.5s
+.hideshow-item--active
+	h3
+		color: $orangeColor
+	i
+		background-image: url("../images/minus-orange.svg")
+	.hideshow-content
+		max-height: 300px
+		padding-bottom: $remSize
+		text-align: justify
+.hideshow-item--faq
+	border: 1px solid $grayColorSecond
+	border-radius: 20px

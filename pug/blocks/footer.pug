@@ -1,0 +1,66 @@
+footer
+  .main-grid
+    .col-sm-1.hidden-xxl.hidden-lg.hidden-md
+    .footer-info.col-3.col-sm-5.col-xs-12
+      .logo-container
+        a.logo(href="./index.html")
+          img(src="/images/logo.svg")
+      .logo-text Больше, чем радио
+      +social(["vw","tlw","okw","wzw"])
+    .feedback-container.col-3.col-sm-5.col-xs-12
+      .feedback
+        .phone.feedback-item
+          a(href="#") 
+            .ico-box
+              i.phone-ico-yellow
+            span + 7 (921) 789 - 65 - 31
+        .address.feedback-item
+          .ico-box
+            i.marker-ico
+          span 656006, г. Барнаул,
+            br
+            |ул. Малахова, 177Е, офис 711
+        .mail.feedback-item
+          a(href="#")
+            .ico-box
+              i.mail-ico-yellow
+            span lead@yradio.ru
+        .btn-container 
+          a.btn.btn--border-white(href="#") 
+            span Обратная связь
+            i
+    .col-sm-1.hidden-xxl.hidden-lg.hidden-md
+    .col-sm-1.hidden-xxl.hidden-lg.hidden-md
+    nav.nav-1.col-3.col-sm-5.col-xs-12.nav-first
+      ul
+        each val in ["О  компании","Акции","Документы и оплата","Контакты","Вопросы и ответы","Новости","Блог"]
+          li  
+            a(href="#") 
+              = val
+    nav.nav-2.col-3.col-sm-5.col-xs-12.nav-second
+      h3 Каталог
+      ul.custom-disk
+        each val in ["Фоновая музыка","Корпоративное радио","Аудиобрендирование","Рекламная площадка","Корпоративный информатор","Производство аудиороликов","Лицензия РАО и ВОИС"]
+          li  
+            a(href="#") 
+              = val
+  .main-grid.footer-bottom
+    .col-sm-1.hidden-xxl.hidden-lg.hidden-md
+    .col-xs-12.ico-container.hidden-xxl.hidden-lg.hidden-md.hidden-sm.footer-bottom-item
+      a(href="#")
+        img(src="/images/AppStore.svg", alt="")
+      a(href="#")
+        img(src="/images/GooglePlay.svg", alt="")
+    .col-3.col-sm-5.copyright.col-xs-12.footer-bottom-item.footer-bottom-item-top
+      | © ООО «ТВОЕ РАДИО»
+    .col-3.col-sm-5.col-xs-12.footer-bottom-item.footer-bottom-item-top.map-site
+      a(href="#") Карта сайта 
+    .col-sm-1.hidden-xxl.hidden-lg.hidden-md 
+    .col-sm-1.hidden-xxl.hidden-lg.hidden-md
+    .col-3.col-sm-5.col-xs-12.footer-bottom-item.politics
+      a(href="#") Политика конфиденциальности
+    .col-3.col-sm-5.ico-container.hidden-xs
+      a.first-logo(href="#")
+        img(src="/images/AppStore.svg", alt="")
+      a(href="#")
+        img(src="/images/GooglePlay.svg", alt="")

@@ -1,0 +1,58 @@
+
+.reviews-list
+  .navigation
+    display: flex
+    justify-content: space-between
+    a
+      text-decoration: none
+      &:hover
+        color: $greenColor
+.reviews-item
+  border: 1px solid $grayColorSecond
+  padding: 60px 30px 30px
+  border-radius: 20px
+  margin-bottom: 30px
+  max-width: 930px
+  h2
+    font-size: $standartSizePlus
+    color: $violetColor
+    margin: 0
+  h3
+    font-size: inherit
+    font-size: $smallSizeSecond
+    font-weight: 400
+  .reviews-name
+    display: inline-block
+    text-align: left
+    vertical-align: middle
+  .reviews-text
+    font-size: $smallSizeSecond
+.reviews-info
+  text-align: center
+
+.reviews-img
+  width: 102px
+  height: 102px
+  border-radius: 100%
+  border: 1px solid $grayColorSecond
+  overflow: hidden
+  position: relative
+  display: inline-block
+  margin-right: 30px
+  vertical-align: top
+  margin: 0 0 15px
+  vertical-align: middle
+.reviews-item--extra
+  .reviews-img
+    margin-right: 15px
+  .reviews-text
+    color: $violetColor
+    font-style: italic
+    margin: auto 0
+    font-size: $standartSize
+  .reviews-body
+    display: flex
+    width: 100%
+.reviews-audio
+  text-align: center
+  margin-top: 15px

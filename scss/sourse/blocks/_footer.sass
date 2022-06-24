@@ -1,0 +1,134 @@
+.stub-footer
+  height: 90px
+footer
+  position: relative
+  overflow: hidden
+  background-color: $blackColor
+  padding: 60px 0 30px
+  color: $whiteColor
+  font-size: $smallSizeSecond
+  .logo-container
+    margin: 0 0 10px
+  .logo img
+    max-width: 110px
+  .social
+    margin-top: 15px
+  .ico-box
+    display: inline-block
+
+  ul,
+  li
+    list-style: none
+    margin: 0
+    padding: 0
+
+  .footer-info
+    position: relative
+    z-index: 2
+
+  nav
+    padding-top: 4px
+    h3
+      font-size: inherit
+      color: inherit
+      font-weight: inherit
+      margin: 0 0 10px
+    a:hover
+      color: $orangeColor
+    .custom-disk li
+      &:before
+        background-color: $whiteColor
+      &:hover:before
+        background-color: $orangeColor
+    li
+      margin: 0 0 10px
+  .btn
+    font-size: $smallSizeSecond
+    font-weight: 700
+    i
+      background-image: url(../images/controls/arrow-btn-orange.svg)
+    &:hover
+      background-color: $whiteColor
+      i
+        width: 17px
+
+  .feedback-container
+    .feedback
+      margin: 0 0 30px
+      a:hover
+        color: $orangeColor
+    .links
+      a
+        margin: 0 0 15px
+        opacity: 0.5
+        &:hover
+          opacity: 1
+
+  .feedback-item
+    display: flex
+    margin: 0 0 15px
+    i
+      margin-right: 15px
+    i,span
+      margin-top: auto
+      margin-bottom: auto
+  .phone
+    font-weight: bold
+  .phone-circle
+    background-color: $whiteColor
+    color: $violetColor
+    font-size: $smallSize
+  a
+    text-decoration: none
+  .footer-bottom
+    margin-top: 45px
+    font-size: $microSizeSecond
+    a
+      font-size: inherit
+      text-decoration: underline
+      opacity: 0.6
+      &:hover
+        opacity: 1
+  .ico-container
+
+    img
+      width: 75px
+    a
+      opacity: 1
+    .first-logo
+      margin-right: 30px
+  .copyright
+    opacity: 0.5
+.footer-bottom-item-top
+  margin-bottom: 30px
+@media (max-width: 1024px)
+  footer
+    padding: 45px 0 30px
+    .feedback-item i
+      margin-right: 8px
+@media (max-width: 992px)
+  .footer-bottom-item
+    margin-bottom: 15px
+
+@media (max-width: 576px)
+  footer
+    .social
+      margin: 15px 0 30px
+    .nav-first
+      margin: 0 0 30px
+    .nav-second
+      margin: 0 0 45px
+    .ico-container
+      grid-row: 1
+    .map-site
+      grid-row: 2
+    .politics
+      grid-row: 3
+    .copyright
+      grid-row: 4
+    .ico-container a
+      margin-right: 30px
+    .footer-bottom
+      margin-top: 0
+  .footer-bottom-item
+    margin: 0 0 15px

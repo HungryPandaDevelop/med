@@ -1,0 +1,37 @@
+.advantages
+  background-color: $violetColor
+  color: $whiteColor
+  padding: ($remSize * 6)
+  position: relative
+  overflow: hidden
+.advantages-item
+  max-width: 200px
+  margin: 0 auto
+  text-decoration: none
+  text-align: center
+  a
+    text-decoration: none
+
+  h3
+    font-size: $standartSize
+    font-weight: 400
+    line-height: 1.6
+    color: inherit
+    margin: 0 0 15px
+.advantages-item-img
+  margin: 0 0 15px
+  width: 100px
+  height: 100px
+
+.advantages-item-description
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
+  line-clamp: 2
+  margin: 0 0 15px
+
+@media (max-width: 1024px)
+  .advantages
+    padding: 65px 0
+@media (max-width: 576px)

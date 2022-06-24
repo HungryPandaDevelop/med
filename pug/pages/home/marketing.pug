@@ -1,0 +1,16 @@
+section.marketing
+	.main-full.head-section
+		h2.title-section 
+			|Аудиомаркетинг от 
+			span Y
+			|Radio
+		h3.subtitle-section 
+			| Наши клиенты
+	.main-grid.owl-tablet.owl-carousel
+		-for (var i=0; i < 8; i++)
+			+marketingItem("Торговый центр «Метрополис»","../images/temp/marketing.jpg","#торговые центры","Посмотреть")
+	.btn-container_section
+		a.btn.btn--orange.btn--anim(href="#") 
+			span Оформить заявку на подключение  
+			i
+		a.btn.btn--link(href="#") Посмотреть кейсы  

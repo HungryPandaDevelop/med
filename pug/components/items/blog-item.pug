@@ -1,0 +1,14 @@
+mixin blogItem( name, img, hash, data)
+  .blog-item.col-3.col-xs-12
+    .blog-item-img.img-cover
+      img(src= img, alt="")
+    .blog-item-info
+      .blog-item-hash.mobile.hidden
+        a(href="#")= hash
+      h3
+        a(href="#")= name
+      .blog-item-bottom 
+        .blog-item-hash.hidden-sm
+          a(href="#")= hash
+        .blog-item-data 
+          = data

@@ -1,0 +1,53 @@
+header
+	.main-grid.headline
+		.vertical-align.col-2.col-md-2.col-xs-2
+			a.logo(href="#") 
+				img(src="/images/logo.svg", alt="")
+		.vertical-align.col-2 
+			nav.nav-header.hidden-md.hidden-sm.hidden-xs
+				ul.ln
+						li
+							a.ico-in.ico-in--right.dropdown-link(href="#") 
+								span Каталог
+								i
+									img.back-ico(src="/images/controls/carret-down-yellow.svg", alt="")
+									img.front-ico(src="/images/controls/carret-down-white.svg", alt="")
+		.vertical-align.col-4
+			nav.nav-header.hidden-md.hidden-sm.hidden-xs
+				ul.ln
+					each val in ["Услуги","Акции","О компании","Контакты"]
+						li
+							a(href="#")
+								= val
+		.vertical-align.feedback-header.col-4.col-md-4.hidden-xs
+			.phone-header
+				a(href="#")  8 800 775-99-55
+			a(href="#").btn.btn--border-white.element-btn.hidden-sm(data-element="1") Консультация
+		.hamburger-container.vertical-align.hidden-xxl.hidden-lg.col-xs-6
+			a(href="#").hamburger-btn.element-btn(data-element="0")
+	.main-grid.header-menu-hidden
+		.col-2
+			.header-menu-hidden-container
+				.header-menu-border
+				h3 
+					a(href="#") продукция КВМЕД
+				ul.ln 
+					li 
+						a(href="#") Реанимация и анестезиология 
+						ul 
+							li 
+								a(href="#") Аппараты ИВЛ
+							li 
+								a(href="#") Наркозно-дыхательные аппараты
+							li 
+								a(href="#") Мониторы пациента
+					li 
+						a(href="#") Ренгенология
+					li 
+						a(href="#") Функциональная диагностика
+					li 
+						a(href="#") Дезинфекция
+					li 
+						a(href="#") Стерилизация
+					li 
+						a(href="#") Физиотерапия
