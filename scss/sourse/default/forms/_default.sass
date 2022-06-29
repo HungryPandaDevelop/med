@@ -3,33 +3,26 @@
 	padding: 12px 15px
 	border: 0
 	font-family: inherit
-	font-size: $standartSize
+	font-size: $mediumSize
+	font-weight: 300
 	resize: none
 	width: 100%
 	background: none
-	background-color: $grayColorThree
-	margin: 0 0 15px
-	color: $violetColor
+	border-bottom: 1px solid $blackColor
+	margin: 0 0 30px
+	color: $blackColor
 	&:focus
 		outline: 0
 	&::placeholder
-		color: $violetColor
+		color: $greenColor
 .file-decorate-error span,
 .input-error
 	border-color: $redColor
 .mail-error
 	border-color: $orangeColor
 
-.form
-	.btn
-		margin: 15px 0 0
-		@include bgImageEl("../images/controls/arrow-btn-white.svg", 0, 132px center)
-		&:hover
-			padding-right: 55px
-			@include bgImageEl("../images/controls/arrow-btn-white.svg", 31px, 130px center)
-	&.main-grid
-		padding: 0
 .form-btn-container
 	position: relative
+	padding-top: 30px
 
 /*-checkbox-end-*/

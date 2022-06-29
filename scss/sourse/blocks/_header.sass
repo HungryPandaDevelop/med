@@ -37,10 +37,10 @@ header
 	a
 		text-align: center
 		min-width: 100px
-		padding: 23px 15px
+		padding: 22px 15px
 		&:hover
 			color: $yellowColor
-			background-color: $greenColor
+			background: linear-gradient(38deg, rgba(51,190,173,1) 0%, rgba(33,125,120,1) 100%)
 			text-decoration: none
 .logo
 	position: relative
@@ -66,24 +66,38 @@ header
 .dropdown-link
 	border-right: 1px solid rgb($whiteColor, 0)
 	width: 120px
+	padding: 22px 15px
+	transition: ease-out 0.25s
 	i
-		margin-right: -10px
-
+		margin-left: 6px
+		@include icoEl(30px, 30px,"/images/controls/carret-down-white.svg", middle, 30px)
+	&:hover
+		i
+			background-image: url("/images/controls/carret-down-yellow.svg")
+.dropdown-link--active
+	background-color: $blackColor
+	border-right: 1px solid $whiteColor
+	color: $yellowColor
+	i
+		@include icoEl(30px, 30px,"/images/controls/close-yellow.svg", middle, 23px)
+	&:hover
+		color: $whiteColor
+		i
+			background-image: url("/images/controls/close-white.svg")
 .header-menu-border
-	@include positionElement(1px, 100%, 0, 0, right)
+	@include positionElement(1px, 0, calc(100% + 30px + 119px))
 	background-color: $whiteColor
-.header-menu-hidden-container
-	position: relative
-	top: 100%
-	width: calc(100% + 30px + 120px)
+	transition: ease-out 0.25s
+.header-menu-hidden
+	width: calc(100% + 30px + 119px)
 	height: calc(100vh - $headerHeight)
 	background-color: $blackColor
 	padding: 45px 15px 30px 30px
 	font-size: $standartSizePlusPlus
-	&::before
-		content: ""
-		@include positionElement(100%,100%,100%,0,right)
-		background-color: $blackColor
+	position: relative
+	transition: ease-out 0.25s
+	position: relative
+	top: 100vh
 	h3
 		color: inherit
 		text-transform: uppercase
@@ -99,3 +113,13 @@ header
 			font-weight: 400
 	a:hover
 		color: $yellowColor
+.header-menu-topic--second
+	margin-right: 45px
+.header-menu-hidden-wrapper
+	height: 1px
+	position: relative
+	&.active
+		.header-menu-border
+			height: 100vh
+		.header-menu-hidden
+			top: 0

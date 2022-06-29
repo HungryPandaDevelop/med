@@ -13,7 +13,6 @@
     <script src="/js/common-dist.js" defer></script>
   </head>
   <!-- head end-->
-  <!-- +stockItem("Весенние скидки на фоновую музыку","YRadio – комплекс инструментов аудиомаркетинга в одном решении","/images/temp/1.jpg","25 000","15 000","30.04.2022 г. ")-->
   <body> 
     <!-- popup-menu start-->
       <div class="popup element-show menu-hamburger" data-element="0">
@@ -72,8 +71,8 @@
         <div class="popup-container">
           <div class="close-btn close-btn_popup close-js"></div>
           <div class="main-full">
-            <h2>Обратная связь</h2>
-            <div class="lead">Благодарим за обращение.&lt;br&gt; Наш менеджер перезвонит вам в ближайшее время.
+            <h2>Консультация</h2>
+            <div class="lead">Благодарим за обращение. Наш менеджер перезвонит вам в ближайшее время.
             </div>
           </div> 
             <form class="form main-grid">
@@ -85,7 +84,7 @@
                 </label>
               </div>
               <div class="form-btn-container col-12">
-                <input class="btn btn--orange btn-send" type="submit">
+                <input class="btn btn--yellow-green btn-send" type="submit">
               </div>
             </form>
         </div>
@@ -183,9 +182,9 @@
       <div class="main-grid headline">
         <div class="vertical-align col-2 col-md-2 col-xs-2"><a class="logo" href="#"> <img src="/images/logo.svg" alt=""></a></div>
         <div class="vertical-align col-2"> 
-          <nav class="nav-header hidden-md hidden-sm hidden-xs">
+          <nav class="hidden-md hidden-sm hidden-xs">
             <ul class="ln">
-              <li><a class="ico-in ico-in--right dropdown-link" href="#"> <span>Каталог</span><i><img class="back-ico" src="/images/controls/carret-down-yellow.svg" alt=""><img class="front-ico" src="/images/controls/carret-down-white.svg" alt=""></i></a></li>
+              <li><a class="dropdown-link" href="#"> <span>Каталог</span><i></i></a></li>
             </ul>
           </nav>
         </div>
@@ -203,11 +202,9 @@
           <div class="phone-header"><a href="#"> 8 800 775-99-55</a></div><a class="btn btn--border-white element-btn hidden-sm" href="#" data-element="1">Консультация</a>
         </div>
         <div class="hamburger-container vertical-align hidden-xxl hidden-lg col-xs-6"><a class="hamburger-btn element-btn" href="#" data-element="0"></a></div>
-      </div>
-      <div class="main-grid header-menu-hidden">
-        <div class="col-2">
-          <div class="header-menu-hidden-container">
-            <div class="header-menu-border"></div>
+        <div class="col-2 header-menu-hidden-wrapper">
+          <div class="header-menu-border"></div>
+          <div class="header-menu-hidden">
             <h3> <a href="#">продукция КВМЕД</a></h3>
             <ul class="ln"> 
               <li> <a href="#">Реанимация и анестезиология </a>
@@ -222,6 +219,11 @@
               <li> <a href="#">Дезинфекция</a></li>
               <li> <a href="#">Стерилизация</a></li>
               <li> <a href="#">Физиотерапия</a></li>
+            </ul>
+            <h3 class="header-menu-topic--second"><a href="#">Медицинский транспорт</a></h3>
+            <ul class="ln"> 
+              <li> <a href="#">Автомобили медицинской помощи</a></li>
+              <li> <a href="#">Автомобили скорой</a></li>
             </ul>
           </div>
         </div>
@@ -238,26 +240,7 @@
     <div class="main-full">
       <h1>Контакты</h1>
     </div>
-    <div class="page main-grid contacts-items-container">
-        <div class="contacts-item col-3 col-sm-6 col-xs-12">
-          <div class="contacts-item-img"><img src="/images/temp/contacts/1.svg" alt=""></div>
-          <h3>Адрес:</h3>
-          <div class="contacts-item-description">Алтайский край, г.Барнаул, ул. Малахова, д. 177е, помещение 41</div>
-        </div>
-        <div class="contacts-item col-3 col-sm-6 col-xs-12">
-          <div class="contacts-item-img"><img src="/images/temp/contacts/2.svg" alt=""></div>
-          <h3>Телефон:</h3><a class="contacts-item-description" href="#">8-800-775-99-55</a>
-        </div>
-        <div class="contacts-item col-3 col-sm-6 col-xs-12">
-          <div class="contacts-item-img"><img src="/images/temp/contacts/3.svg" alt=""></div>
-          <h3>E-Mail:</h3><a class="contacts-item-description" href="#">lead@yradio.ru</a>
-        </div>
-        <div class="contacts-item col-3 col-sm-6 col-xs-12">
-          <div class="contacts-item-img"><img src="/images/temp/contacts/4.svg" alt=""></div>
-          <h3>График работы:</h3>
-          <div class="contacts-item-description">Понедельник - Воскресенье 24/7</div>
-        </div>
-    </div>
+    <div class="page main-grid contacts-items-container"></div>
     <div class="main-grid">
       <div class="col-6 col-sm-12">
         <div class="contacts-info"> 
@@ -300,12 +283,14 @@
       </div>
     </div>
     <section class="feedback">
+      <div class="feedback-bg"></div>
+      <div class="feedback-man"></div>
       <div class="main-grid">
-        <div class="col-1 hidden-sm hidden-xs"></div>
-        <div class="col-5 feedback-info col-sm-6 col-xs-12">
-          <h2>Подарите голос вашему бизнесу</h2>
-          <h3>Получите бесплатный  плейлист легальной музыки</h3>
-          <div>Оставьте ваши контакты, мы свяжемся с Вами и подберем музыку именно для вашего бизнеса.</div>
+        <div class="col-3"></div>
+        <div class="col-4 feedback-info col-sm-6 col-xs-12">
+          <h2>Вызов специалиста</h2>
+          <h3>Получите бесплатную консультацию</h3>
+          <div>Оставьте ваши контакты, мы свяжемся с Вами и подберем оборудование именно для вашего бизнеса.</div>
         </div>
         <div class="col-5 col-sm-6 col-xs-12">
             <form class="form main-grid">
@@ -317,7 +302,7 @@
                 </label>
               </div>
               <div class="form-btn-container col-12">
-                <input class="btn btn-send btn--orange" type="submit" value="Отправить">
+                <input class="btn btn-send btn--yellow" type="submit" value="Отправить">
               </div>
             </form>
         </div>
@@ -332,21 +317,20 @@
     <div class="col-sm-1 hidden-xxl hidden-lg hidden-md"></div>
     <div class="footer-info col-3 col-sm-5 col-xs-12">
       <div class="logo-container"><a class="logo" href="./index.html"><img src="/images/logo.svg"></a></div>
-      <div class="logo-text">Больше, чем радио</div>
+      <div class="logo-text">Cовременная медицинская компания</div>
         <div class="social"><a class="social-ico--white" href="#"><img src="/images/social/vk-white.svg" alt=""><img class="ico-hover" src="/images/social/vk-orange.svg" alt=""></a><a class="social-ico--white" href="#"><img src="/images/social/telegram-white.svg" alt=""><img class="ico-hover" src="/images/social/telegram-orange.svg" alt=""></a><a class="social-ico--white" href="#"><img src="/images/social/ok-white.svg" alt=""><img class="ico-hover" src="/images/social/ok-orange.svg" alt=""></a><a class="social-ico--white" href="#"><img src="/images/social/whatsapp-white.svg" alt=""><img class="ico-hover" src="/images/social/whatsapp-orange.svg" alt=""></a>
         </div>
     </div>
     <div class="feedback-container col-3 col-sm-5 col-xs-12">
       <div class="feedback">
         <div class="phone feedback-item"><a href="#"> 
-            <div class="ico-box"><i class="phone-ico-yellow"></i></div><span>+ 7 (921) 789 - 65 - 31</span>
-            <div class="phone-circle">24/7</div></a></div>
+            <div class="ico-box"><i class="phone-ico-yellow"></i></div><span>+ 7 (985) 282 - 65 - 32</span></a></div>
         <div class="address feedback-item">
-          <div class="ico-box"><i class="marker-ico"></i></div><span>656006, г. Барнаул,<br>ул. Малахова, 177Е, офис 711</span>
+          <div class="ico-box"><i class="marker-ico"></i></div><span>109475, г. Москва,<br>ул. Малахова, 177Е, офис 711</span>
         </div>
         <div class="mail feedback-item"><a href="#">
-            <div class="ico-box"><i class="mail-ico-yellow"></i></div><span>lead@yradio.ru</span></a></div>
-        <div class="btn-container"> <a class="btn btn--orange-v" href="#"> <span>Обратная связь</span><i></i></a></div>
+            <div class="ico-box"><i class="mail-ico-yellow"></i></div><span>mail@mail.ru</span></a></div>
+        <div class="btn-container"> <a class="btn btn--border-white btn-element" href="#"> <span>Обратная связь</span><i></i></a></div>
       </div>
     </div>
     <div class="col-sm-1 hidden-xxl hidden-lg hidden-md"></div>
@@ -354,32 +338,29 @@
     <nav class="nav-1 col-3 col-sm-5 col-xs-12 nav-first">
       <ul>
         <li> <a href="#"> О  компании</a></li>
-        <li> <a href="#"> Акции</a></li>
-        <li> <a href="#"> Кейсы</a></li>
         <li> <a href="#"> Документы и оплата</a></li>
         <li> <a href="#"> Контакты</a></li>
         <li> <a href="#"> Вопросы и ответы</a></li>
-        <li> <a href="#"> Новости</a></li>
-        <li> <a href="#"> Блог</a></li>
+        <li> <a href="#"> Новости и События</a></li>
       </ul>
     </nav>
     <nav class="nav-2 col-3 col-sm-5 col-xs-12 nav-second">
-      <h3>Услуги</h3>
+      <h3>Каталог</h3>
       <ul class="custom-disk">
-        <li> <a href="#"> Фоновая музыка</a></li>
-        <li> <a href="#"> Корпоративное радио</a></li>
-        <li> <a href="#"> Аудиобрендирование</a></li>
-        <li> <a href="#"> Рекламная площадка</a></li>
-        <li> <a href="#"> Корпоративный информатор</a></li>
-        <li> <a href="#"> Производство аудиороликов</a></li>
-        <li> <a href="#"> Лицензия РАО и ВОИС</a></li>
+        <li> <a href="#"> Реанимация и анестезиология</a></li>
+        <li> <a href="#"> Ренгенология</a></li>
+        <li> <a href="#"> Функциональная диагностика</a></li>
+        <li> <a href="#"> Дезинфекция</a></li>
+        <li> <a href="#"> Стерилизация</a></li>
+        <li> <a href="#"> Физиотерапия</a></li>
+        <li> <a href="#"> Медицинский транспорт</a></li>
       </ul>
     </nav>
   </div>
   <div class="main-grid footer-bottom">
     <div class="col-sm-1 hidden-xxl hidden-lg hidden-md"></div>
     <div class="col-xs-12 ico-container hidden-xxl hidden-lg hidden-md hidden-sm footer-bottom-item"><a href="#"><img src="/images/AppStore.svg" alt=""></a><a href="#"><img src="/images/GooglePlay.svg" alt=""></a></div>
-    <div class="col-3 col-sm-5 copyright col-xs-12 footer-bottom-item footer-bottom-item-top">© ООО «ТВОЕ РАДИО»</div>
+    <div class="col-3 col-sm-5 copyright col-xs-12 footer-bottom-item footer-bottom-item-top">© ООО «КВМЕД»</div>
     <div class="col-3 col-sm-5 col-xs-12 footer-bottom-item footer-bottom-item-top map-site"><a href="#">Карта сайта </a></div>
     <div class="col-sm-1 hidden-xxl hidden-lg hidden-md"> </div>
     <div class="col-sm-1 hidden-xxl hidden-lg hidden-md"></div>

@@ -13,7 +13,7 @@
   font-weight: 400
   text-transform: uppercase
   transition: ease-out 0.25s
-
+  min-width: 180px
 .btn--black
   background-color: $blackColor
   border-color: $blackColor
@@ -38,6 +38,14 @@
     background: $whiteColor
     color: $blackColor
     border-color: $whiteColor
+.btn--yellow-green
+  background-color: $yellowColor
+  border-color: $yellowColor
+  color: $blackColor
+  &:hover
+    background: $greenColor
+    color: $whiteColor
+    border-color: $greenColor
 .btn--border-white
   background: none
   color: $whiteColor
@@ -176,10 +184,10 @@ a.pagination-next
 /*pagination page end*/
 
 .close-btn
-  @include icoEl(18px, 18px, "../images/controls/close-violet.svg")
+  @include icoEl(45px, 45px, "../images/controls/close-black.svg")
   cursor: pointer
   &:hover
-    background-image: url("../images/controls/close-orange.svg")
+    background-image: url("../images/controls/close-green.svg")
 
 .hamburger-btn
   @include icoEl(30px, 30px, "../images/controls/hamburger-violet.svg")

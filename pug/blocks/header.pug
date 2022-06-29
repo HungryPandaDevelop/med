@@ -4,14 +4,12 @@ header
 			a.logo(href="#") 
 				img(src="/images/logo.svg", alt="")
 		.vertical-align.col-2 
-			nav.nav-header.hidden-md.hidden-sm.hidden-xs
+			nav.hidden-md.hidden-sm.hidden-xs
 				ul.ln
 						li
-							a.ico-in.ico-in--right.dropdown-link(href="#") 
+							a.dropdown-link(href="#") 
 								span Каталог
 								i
-									img.back-ico(src="/images/controls/carret-down-yellow.svg", alt="")
-									img.front-ico(src="/images/controls/carret-down-white.svg", alt="")
 		.vertical-align.col-4
 			nav.nav-header.hidden-md.hidden-sm.hidden-xs
 				ul.ln
@@ -25,10 +23,10 @@ header
 			a(href="#").btn.btn--border-white.element-btn.hidden-sm(data-element="1") Консультация
 		.hamburger-container.vertical-align.hidden-xxl.hidden-lg.col-xs-6
 			a(href="#").hamburger-btn.element-btn(data-element="0")
-	.main-grid.header-menu-hidden
-		.col-2
-			.header-menu-hidden-container
-				.header-menu-border
+
+		.col-2.header-menu-hidden-wrapper
+			.header-menu-border
+			.header-menu-hidden
 				h3 
 					a(href="#") продукция КВМЕД
 				ul.ln 
@@ -51,3 +49,10 @@ header
 						a(href="#") Стерилизация
 					li 
 						a(href="#") Физиотерапия
+				h3.header-menu-topic--second
+					a(href="#") Медицинский транспорт
+				ul.ln 
+					li 
+						a(href="#") Автомобили медицинской помощи
+					li 
+						a(href="#") Автомобили скорой

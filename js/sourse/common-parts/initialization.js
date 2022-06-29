@@ -3,8 +3,8 @@ let owlMain = $('.owl-main');
 owlMain.owlCarousel({
   items: 1,
   nav: true,
-  dots: true,
-
+  dots: false,
+  margin: 30
 });
 
 let owlGallery = $('.owl-gallery');

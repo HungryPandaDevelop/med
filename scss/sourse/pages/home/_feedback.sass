@@ -1,19 +1,40 @@
 .feedback
+  position: relative
+  overflow: visible
+  padding-bottom: 30px
+  color: $whiteColor
+
+  .feedback-man
+    @include positionElement(460px,560px,0,0,left,bottom,2)
+    @include bgImageEl("/images/temp/men.png")
+  .feedback-bg
+    @include positionElement(100%, 380px, 0,0, left, bottom)
+    background-color: $greenColor
+  .main-grid
+    position: relative
   h2
-    color: $violetColor
-    font-size: $mediumSizePlus
-    margin-bottom: $remSize
+    color: inherit
+    font-size: $largeSize
+    margin: 0
   h3
-    color: $orangeColor
-    font-size: $standartSizePlus
-    font-weight: 400
-    margin-bottom: $remSize
+    color: $yellowColor
+    font-size: $standartSizePlusPlus
+
+    margin-bottom: 30px
+
   .feedback-info
-    max-width: 410px
-  .form-btn-container
-    text-align: center
+    font-size: $standartSizePlusPlus
+    font-weight: 300
+    max-width: 400px
   .agreement
     font-size: $smallSizeSecond
+  .input-decorate
+    border-color: $whiteColor
+    color: inherit
+    &::placeholder
+      color: inherit
+  .checkbox
+    color: inherit
 @media (max-width: 576px)
   .feedback
     h2

@@ -1,0 +1,38 @@
+.category
+  height: 70vh
+  color: $whiteColor
+  .col-6,
+  .main-grid,
+  .img-cover
+    height: 100%
+  .main-grid
+    max-width: none
+    gap: 0
+    padding: 0
+.category-item
+  position: relative
+  background-color: $blackColor
+  display: flex
+  width: 100%
+  overflow: hidden
+  .img-cover
+    @include positionElement(100%,100%,0,0)
+    opacity: 0.6
+    transition: ease-out 2s
+  &:hover
+    .img-cover
+      opacity: 0.3
+      transform: translateX(50px) translateY(-50px) scale(1.5)
+      transition-duration: 10s
+.category-info
+  position: relative
+  margin: auto
+  text-align: center
+  h2, h3
+    color: inherit
+  h2
+    font-size: $largeSize
+  h3
+    font-weight: 300
+    font-size: $mediumSize
+    margin: 0 0 45px
