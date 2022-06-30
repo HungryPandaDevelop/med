@@ -87,7 +87,7 @@ header
 .header-menu-border
 	@include positionElement(1px, 0, calc(100% + 30px + 119px))
 	background-color: $whiteColor
-	transition: ease-out 0.25s
+	transition: ease-out 0.5s
 .header-menu-hidden
 	width: calc(100% + 30px + 119px)
 	height: calc(100vh - $headerHeight)
@@ -95,13 +95,13 @@ header
 	padding: 45px 15px 30px 30px
 	font-size: $standartSizePlusPlus
 	position: relative
-	transition: ease-out 0.25s
+	transition: ease-out 0.5s
 	position: relative
 	top: 100vh
 	h3
 		color: inherit
 		text-transform: uppercase
-		margin: 0 0 30px
+		margin: 0 0 15px
 		font-size: $mediumSize
 	li
 		margin: 0 0 8px
@@ -113,8 +113,8 @@ header
 			font-weight: 400
 	a:hover
 		color: $yellowColor
-.header-menu-topic--second
-	margin-right: 45px
+h3.header-menu-topic--second
+	margin-top: 45px
 .header-menu-hidden-wrapper
 	height: 1px
 	position: relative

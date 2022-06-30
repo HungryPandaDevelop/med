@@ -1,0 +1,75 @@
+.offer-item
+  border: 1px solid $grayColorThree
+  border-bottom: 0
+  padding: 15px 0px 0px
+  transition: ease-out 0.5s
+  h3
+    font-size: $mediumSize
+    margin: 0 0 0px
+    a
+      text-decoration: none
+  h4
+    font-size: $smallSizeSecond
+    font-weight: 500
+    color: $grayColor
+    margin: 0 0 15px
+  h5
+    font-size: $smallSizeSecond
+    margin: 0 0 30px
+  .btn-container
+    display: flex
+  .btn
+    width: 50%
+  .offer-item-img
+    position: relative
+    margin: 0 0 30px
+    text-align: center
+    padding-bottom: 50%
+    display: block
+    background-size: 50%
+    img
+      @include positionElement(50%, 100%, 25%)
+      transition: ease-out 0.5s
+      object-fit: contain
+  .img-front
+    opacity: 0
+  &:hover
+    box-shadow: $shadowOne
+    .offer-item-img
+      img
+        transform: scale(1.1)
+    .img-front
+      opacity: 1
+    .img-back
+      opacity: 0
+.offer-item-info
+  padding: 15px 30px
+
+  a
+    &:hover
+      color: $greenColor
+
+.offer-item-code
+  font-size: $smallSize
+  margin: 0 0 15px
+
+.offer-tabs
+  color: $blackColor
+  font-weight: 700
+  border-bottom: 1px solid
+  padding-bottom: 15px
+  margin-bottom: 60px
+  margin-top: 75px
+  position: relative
+  &::before
+    content: ""
+    @include positionElement(30px, 4px, 0,0, left, bottom)
+    transform: translateY(50%)
+    background-color: $blackColor
+  li
+    display: inline-block
+    padding-right: 45px
+    cursor: pointer
+    &:hover,
+    &.active
+      color: $greenColor

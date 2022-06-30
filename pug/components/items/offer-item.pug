@@ -1,0 +1,21 @@
+mixin cardOffer( name, name2, img,img2, btnText)
+	.offer-item.col-3
+		.offer-item-info
+			.offer-item-code
+				b Код товара: 
+				span 21349532
+			a.offer-item-img(href="#")
+				img.img-back(src= img, alt="") 
+				img.img-front(src= img2, alt="") 
+			h3
+				a(href="#")= name
+			h4= name2
+			h5 Цена по запросу
+		.btn-container
+			a.btn.btn--green-white(href="#")
+				span= btnText
+			a.btn.btn--yellow-white(href="#")
+				span к товару
+
+
+
