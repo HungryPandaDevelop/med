@@ -70,20 +70,20 @@ header
 	transition: ease-out 0.25s
 	i
 		margin-left: 6px
-		@include icoEl(30px, 30px,"/images/controls/carret-down-white.svg", middle, 30px)
+		@include icoEl(30px, 30px,"../images/controls/carret-down-white.svg", middle, 30px)
 	&:hover
 		i
-			background-image: url("/images/controls/carret-down-yellow.svg")
+			background-image: url("../images/controls/carret-down-yellow.svg")
 .dropdown-link--active
 	background-color: $blackColor
 	border-right: 1px solid $whiteColor
 	color: $yellowColor
 	i
-		@include icoEl(30px, 30px,"/images/controls/close-yellow.svg", middle, 23px)
+		@include icoEl(30px, 30px,"../images/controls/close-yellow.svg", middle, 23px)
 	&:hover
 		color: $whiteColor
 		i
-			background-image: url("/images/controls/close-white.svg")
+			background-image: url("../images/controls/close-white.svg")
 .header-menu-border
 	@include positionElement(1px, 0, calc(100% + 30px + 119px))
 	background-color: $whiteColor

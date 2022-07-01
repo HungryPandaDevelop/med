@@ -1352,10 +1352,10 @@ header.stick {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px;
-  background-image: url("/images/controls/carret-down-white.svg");
+  background-image: url("../images/controls/carret-down-white.svg");
 }
 .dropdown-link:hover i {
-  background-image: url("/images/controls/carret-down-yellow.svg");
+  background-image: url("../images/controls/carret-down-yellow.svg");
 }
 
 .dropdown-link--active {
@@ -1371,13 +1371,13 @@ header.stick {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 23px;
-  background-image: url("/images/controls/close-yellow.svg");
+  background-image: url("../images/controls/close-yellow.svg");
 }
 .dropdown-link--active:hover {
   color: #ffffff;
 }
 .dropdown-link--active:hover i {
-  background-image: url("/images/controls/close-white.svg");
+  background-image: url("../images/controls/close-white.svg");
 }
 
 .header-menu-border {
@@ -1496,24 +1496,8 @@ footer nav .custom-disk li:hover:before {
 footer nav li {
   margin: 0 0 10px;
 }
-footer .btn {
-  font-size: 14px;
-  font-weight: 700;
-}
-footer .btn i {
-  background-image: url(../images/controls/arrow-btn-orange.svg);
-}
-footer .btn:hover {
-  background-color: #ffffff;
-}
-footer .btn:hover i {
-  width: 17px;
-}
 footer .feedback-container .feedback {
   margin: 0 0 30px;
-}
-footer .feedback-container .feedback a:hover {
-  color: #FFD600;
 }
 footer .feedback-container .links a {
   margin: 0 0 15px;
@@ -2379,6 +2363,7 @@ a.pagination-next:hover {
   display: inline-block;
   margin: 0 15px 0 0;
   position: relative;
+  overflow: hidden;
   font-size: 0;
   border-radius: 100%;
 }
@@ -2786,7 +2771,7 @@ a.pagination-next:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("/images/temp/men.png");
+  background-image: url("../images/temp/men.png");
 }
 .feedback .feedback-bg {
   width: 100%;
