@@ -2143,11 +2143,11 @@ footer .copyright {
 }
 
 .btn--link {
-  color: #3F0B71;
+  color: #03ac9f;
   text-decoration: underline;
 }
 .btn--link:hover {
-  color: rgb(255, 145, 83);
+  color: #0b0b0b;
 }
 
 .link {
@@ -3456,27 +3456,26 @@ a.pagination-next:hover {
   overflow: hidden;
 }
 .news-item {
-  margin-bottom: 30px;
+  background-color: #ffffff;
+  height: 100%;
 }
 .news-item a {
-  color: rgb(255, 145, 83);
+  text-decoration: none;
 }
 .news-item h3 {
-  font-size: 24px;
-  margin: 0 0 5px;
-  color: #3F0B71;
+  font-size: 32px;
+  font-weight: 300;
 }
-.news-item h3 a {
-  text-decoration: none;
-  color: inherit;
+.news-item h3:hover {
+  color: #03ac9f;
 }
-.news-item h3 a:hover {
-  color: rgb(255, 145, 83);
+.news-item-info {
+  padding: 30px;
+  height: 250px;
 }
 .news-item-img {
-  height: 100%;
+  height: 250px;
   display: block;
-  border-radius: 20px;
 }
 .news-item-img img {
   width: 100%;
@@ -3485,17 +3484,78 @@ a.pagination-next:hover {
   left: 0;
   top: 0;
 }
+.news-item-roof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.news-item-tag {
+  border: 1px solid;
+  padding: 0 8px;
+}
+.news-item-tag--green {
+  color: #03ac9f;
+  border-color: #03ac9f;
+}
+.news-item-tag--red {
+  color: #f25368;
+  border-color: #f25368;
+}
 .news-item-date {
   font-size: 13px;
   color: #777;
-  margin: 0 0 15px;
+  margin: auto 0;
 }
 .news-item-text {
   margin: 0 0 15px;
   font-size: 14px;
 }
+
+.news-main {
+  margin-top: 60px;
+  background-color: rgba(3, 172, 159, 0.1);
+  padding-bottom: 45px;
+}
+
+.news-main-item {
+  height: 500px;
+  position: relative;
+}
+.news-main-item a {
+  text-decoration: none;
+}
+.news-main-item h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+.news-main-item h3:hover {
+  color: #03ac9f;
+}
+.news-main-item .news-item-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+.news-main-item .news-item-img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.news-main-item .news-item-info {
+  width: 50%;
+  position: absolute;
+  height: 250px;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  padding: 30px;
+}
 @media (max-width: 1280px) {
-  .news-item-info {
+  .news-main-item-item-info {
     padding: 15px 15px;
   }
 }

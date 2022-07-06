@@ -3,32 +3,70 @@
   overflow: hidden
 
   &-item
-    margin-bottom: 30px
 
-    a
-      color: $orangeColor
-    h3
-      font-size: $mediumSize
-      margin: 0 0 5px
-      color: $violetColor
-      a
-        text-decoration: none
-        color: inherit
-        &:hover
-          color: $orangeColor
-  &-item-img
+    background-color: $whiteColor
     height: 100%
+    a
+      text-decoration: none
+    h3
+      font-size: $mediumSizePlusPlus
+      font-weight: 300
+      &:hover
+        color: $greenColor
+  &-item-info
+    padding: 30px
+    height: 250px
+  &-item-img
+    height: 250px
     display: block
-    border-radius: 20px
+
     img
       @include positionElement(100%,100%,0,0)
+  &-item-roof
+    display: flex
+    justify-content: space-between
+  &-item-tag
+    border: 1px solid
+    padding: 0 8px
+  &-item-tag--green
+    color: $greenColor
+    border-color: $greenColor
+  &-item-tag--red
+    color: $redColor
+    border-color: $redColor
   &-item-date
     font-size: $smallSize
     color: $grayColor
-    margin: 0 0 15px
+    margin: auto 0
   &-item-text
     margin: 0 0 15px
     font-size: $smallSizeSecond
+
+.news-main
+  margin-top: 60px
+  background-color: rgba($greenColor, 0.1)
+  padding-bottom: 45px
+.news-main-item
+  height: 500px
+  position: relative
+
+  a
+    text-decoration: none
+
+  h3
+    font-size: $mediumSizePlusPlus
+    font-weight: 300
+    &:hover
+      color: $greenColor
+  .news-item-text
+    font-size: $standartSizePlusPlus
+    font-weight: 300
+  .news-item-img
+    @include positionElement(100%,100%, 0,0)
+  .news-item-info
+    @include positionElement(50%, 250px, 0,0, right, bottom)
+    background-color: $whiteColor
+    padding: 30px
 
   @media (max-width: 1280px)
     &-item-info
