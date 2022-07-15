@@ -1,0 +1,23 @@
+include ../../default/build-header
+.stub
+// header end
++roofContent("Кислородное оборудование")
+	.catalog
+		.main-full 
+			.category-tags 
+				a.category-tags--active(href="#") Все
+				a(href="#") Аксессуары для инфузионного оборудования
+				a(href="#") Аппараты ИВЛ
+				a(href="#") Датчики УЗИ
+		.main-grid
+			- for (var x = 0; x < 12; x++)
+				+cardOffer( 'Mego Afek Lympha Press Mini', 'Аппараты для прессотерапии и лимфодренажа', '/images/temp/product-1.webp', '/images/temp/product-12.webp',  'Получить КП')
+
+	+pagination()
+	
+// footer start  
+
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end   

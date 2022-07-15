@@ -134,12 +134,13 @@
   a,span
     width: 30px
     height: 30px
-    border-radius: 100%
+
     display: inline-block
     text-align: center
     text-decoration: none
     line-height: 27px
     border: 1px solid $blackColor
+    font-size: $smallSizeSecond
     vertical-align: middle
     margin: 0 15px
     &.current,
@@ -147,10 +148,10 @@
       color: $whiteColor
       background-color: $blackColor
 
-.next.page-numbers,
-.prev.page-numbers,
-.pagination-prev,
-.pagination-next
+a.next.page-numbers,
+a.prev.page-numbers,
+a.pagination-prev,
+a.pagination-next
   background-size: 100%
   font-size: 0
   background-color: $blackColor

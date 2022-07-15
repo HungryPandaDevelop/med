@@ -28,12 +28,8 @@
   })
     .owlCarousel({
     items: 4,
-    dots: true,
-    nav: true,
-    navText: [
-      '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
-      '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
-    ],
+    dots: false,
+    nav: false,
     smartSpeed: 200,
     slideSpeed: 500,
     slideBy: 4,

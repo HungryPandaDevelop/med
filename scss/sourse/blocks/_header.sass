@@ -4,6 +4,7 @@ $headerHeight: 75px
 header
 	@include positionElement(100%, $headerHeight, 0, auto, left, top, 3, fixed )
 	color: $whiteColor
+	background-color: $greenColor
 	border-bottom: 1px solid $whiteColor
 	transition: ease-out 0.5s
 	a
@@ -34,13 +35,13 @@ header
 	li
 		display: inline-block
 		position: relative
+
 	a
 		text-align: center
 		min-width: 100px
 		padding: 22px 15px
 		&:hover
 			color: $yellowColor
-			background: linear-gradient(38deg, rgba(51,190,173,1) 0%, rgba(33,125,120,1) 100%)
 			text-decoration: none
 .logo
 	position: relative
@@ -64,16 +65,16 @@ header
 		margin-left: 15px
 
 .dropdown-link
-	border-right: 1px solid rgb($whiteColor, 0)
-	width: 120px
-	padding: 22px 15px
+	border: 1px solid rgb($whiteColor, 0.5)
+	width: 140px
+	padding: 21px 15px
 	transition: ease-out 0.25s
 	i
-		margin-left: 6px
-		@include icoEl(30px, 30px,"../images/controls/carret-down-white.svg", middle, 30px)
+		margin-left: 15px
+		@include icoEl(30px, 30px,"../images/controls/hamburger-white.svg", middle, 30px)
 	&:hover
 		i
-			background-image: url("../images/controls/carret-down-yellow.svg")
+			background-image: url("../images/controls/hamburger-yellow.svg")
 .dropdown-link--active
 	background-color: $blackColor
 	border-right: 1px solid $whiteColor
@@ -85,32 +86,57 @@ header
 		i
 			background-image: url("../images/controls/close-white.svg")
 .header-menu-border
-	@include positionElement(1px, 0, calc(100% + 30px + 119px))
+	@include positionElement(1px, 0, calc(100% + 30px + 139px))
 	background-color: $whiteColor
 	transition: ease-out 0.5s
 .header-menu-hidden
-	width: calc(100% + 30px + 119px)
+	width: calc(100% + 30px + 139px)
 	height: calc(100vh - $headerHeight)
 	background-color: $blackColor
-	padding: 45px 15px 30px 30px
+	padding: 45px 0px 30px 0px
 	font-size: $standartSizePlusPlus
 	position: relative
 	transition: ease-out 0.5s
 	position: relative
 	top: 100vh
-	h3
+	li,ul
+		padding: 0
+		margin: 0
+	li
 		color: inherit
 		text-transform: uppercase
-		margin: 0 0 15px
+		margin: 0 0 30px
 		font-size: $mediumSize
-	li
-		margin: 0 0 8px
-		ul
-			margin: 5px 0 15px
-			padding-left: 30px
+		a
+			margin: 0 0 15px
+			padding: 0 0 0 30px
+
+			display: block
 		li
+			text-transform: initial
 			font-size: $standartSizePlus
-			font-weight: 400
+			margin: 0
+			position: relative
+			a
+				margin: 0
+				padding: 5px 30px
+				border-bottom: 1px solid rgba($grayColorSecond ,0.2 )
+				// padding: 8px 0
+			ul
+				padding-left: 30px
+				transition: ease-out 0.5s
+				position: relative
+				overflow: hidden
+				max-height: 0
+				background-color: rgba($whiteColor ,0.1 )
+				li
+					font-size: $standartSize
+					a
+						border: 0
+			&:hover ul
+				max-height: 300px
+				margin: 0 0 15px
+				padding-left: 15px
 	a:hover
 		color: $yellowColor
 h3.header-menu-topic--second

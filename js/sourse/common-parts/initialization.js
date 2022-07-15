@@ -7,14 +7,14 @@ owlMain.owlCarousel({
   margin: 30
 });
 
-let owlGallery = $('.owl-gallery');
+let owlGallery = $('.market-owl');
 
 owlGallery.owlCarousel({
-  items: 3,
-  nav: false,
-  dots: true,
-  padding: 15,
-  margin: 15
+  items: 4,
+  nav: true,
+  dots: false,
+  padding: 0,
+  margin: 0,
 });
 
 let owlDetail = $('.owl-detail-main');
