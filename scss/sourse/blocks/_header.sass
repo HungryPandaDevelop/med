@@ -38,8 +38,8 @@ header
 
 	a
 		text-align: center
-		min-width: 100px
-		padding: 22px 15px
+		min-width: 80px
+		padding: 24px 15px
 		&:hover
 			color: $yellowColor
 			text-decoration: none
@@ -65,7 +65,8 @@ header
 		margin-left: 15px
 
 .dropdown-link
-	border: 1px solid rgb($whiteColor, 0.5)
+	border-left: 1px solid rgb($whiteColor, 0.5)
+	border-right: 1px solid rgb($whiteColor, 0.5)
 	width: 140px
 	padding: 21px 15px
 	transition: ease-out 0.25s
@@ -149,3 +150,22 @@ h3.header-menu-topic--second
 			height: 100vh
 		.header-menu-hidden
 			top: 0
+
+@media (max-width: 1620px)
+	.phone-header
+		font-size: 18px
+@media (max-width: 1240px)
+	.feedback-header .btn
+		min-width: auto
+	.nav-header a
+		padding: 24px 5px
+@media (max-width: 992px)
+	header
+		height: 60px
+	.dropdown-link
+		padding: 14px
+@media (max-width: 568px)
+	header
+		height: 45px
+	.dropdown-link
+		padding: 7px 14px 6px

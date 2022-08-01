@@ -48,7 +48,7 @@ owlPartners.owlCarousel({
 }
 });
 
-if($(window).width() < 767){
+if($(window).width() < 820){
   let owlTablet = $('.owl-tablet');
 
   owlTablet.owlCarousel({
@@ -58,12 +58,8 @@ if($(window).width() < 767){
       0:{
         items:1
       },
-      380:{
-        items: 2,
-        margin: 15
-      },
       576:{
-        items: 3,
+        items: 2,
         margin: 15
       }
     }

@@ -1,5 +1,7 @@
 .main_home
   height: 100vh
+  max-height: 900px
+  min-height: 620px
   background-color: $blackColor
   position: relative
   overflow: hidden
@@ -88,8 +90,19 @@
     font-size: $mediumSizePlusPlus
     color: inherit
     margin: 0 0 15px
+@media (max-width: 1024px)
+  .main-slider-info h3
+    font-size: 28px
+@media (max-width: 820px)
+  .main_home
+    h1
+      font-size: 40px
+  .main_home
+    max-height: none
 @media (max-width: 576px)
   .main_home
+    h1
+      font-size: 40px
     h3
       font-size: $mediumSize
       margin: 0 0 15px
